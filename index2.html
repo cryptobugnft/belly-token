@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belly Token (BELLY): Fandom Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            /*background-color: #f7f7f7;*/
+            background-color: #000;
+            color: #fff; /* Set font color to white */
+        }
+        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000; /* Set background color to black */
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            /*color: #007bff; */
+            color: #008000; /* Set header color to dark green */
+        
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-weight: bold;
+            /*color: #007bff; */
+            color: #008000; /* Set header color to dark green */
+        }
+
+        p {
+            margin: 0 0 16px 0;
+        }
+
+        ul, ol {
+            margin: 0 0 16px 30px;
+        }
+        
+        ul {
+            text-align: left;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 16px;
+        }
+
+        .social-icon {
+            margin-left: 10px;
+        }
+
+        /* Add responsive styles for mobile */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Add styles for pinned section */
+        .pinned-section {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .pinned-section a {
+            margin-right: 10px;
+        }
+
+        /* Marquee style */
+        .announcement {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Add styles for draggable pinned section */
+        .draggable-section {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: move; /* Set the cursor to indicate draggable */
+        }
+
+        .draggable-section a {
+            margin-right: 10px;
+        }
+
+        /* Top menu styles */
+        .top-menu {
+            display: flex;
+            //justify-content: space-between;
+            justify-content: flex-start; /* Align the menus to the left */
+            gap: 20px; /* Add some spacing between menu items */
+            padding: 10px;
+            /*background-color: #007bff;*/
+            background-color: #008000; /* Set menu background color to dark green */        
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu-item a {
+            color: #fff; /* Set font color to white */
+            text-decoration: none;
+        }
+
+        .menu-item:last-child {
+            margin-right: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+        <div class="menu-item"><a href="#" onclick="loadPage('index.html')">Home</a></div>
+        <div class="menu-item"><a href="#" onclick="loadFaucet()">Faucet</a></div>
+        <div class="menu-item">Exchange</div>
+    </div>
+    
+    <div class="container" id="content">
+        <p><img src="./resources/belly-banner.jpg" alt="Belly" width="360"></p>    
+        <h1>Belly Token (BELLY)</h1>
+
+        <h2>Abstract</h2>
+        <p>Belly Token (BELLY) is a community-driven meme token inspired by "One Piece," a popular anime and manga series. Operating on the Bitcoin Cash (BCH) blockchain, BELLY aims to provide a vibrant ecosystem for fans to connect, engage in activities, and earn rewards.</p>
+
+           
+    <h2>Introduction:</h2>
+    <p>As an independent tribute to "One Piece," Belly Token (BELLY) is not officially affiliated with the franchise. However, it offers a seamless peer-to-peer experience on the BCH blockchain with fast and low-cost transactions.</p>
+
+    <h2>Technical Details:</h2>
+    <p>BELLY tokens utilize the CashTokens protocol on the BCH blockchain, ensuring secure microtransactions and fostering community-driven activities.</p>
+
+    <h2>Tokenomics:</h2>
+    <ul>
+        <li>Token ID: <a href="https://explorer.salemkode.com/token/b62431202f3da15b3f1cb1f8f187731d7e0d25933ddfce781368960a983e985e" target="_blank">b62431202f3da15b3f1cb1....985e</a></li>
+        <li>Total Supply: 100 trillion (100,000,000,000,000) BELLY tokens.</li>
+    </ul>
+    <h3>Initial Allocation:</h3>
+    <ul>
+        <li>Project Development: 40%</li>
+        <li>Team Members and Advisors: 10%</li>
+        <li>Liquidity Pool: 30%</li>
+        <li>Community Airdrops: 20%</li>
+    </ul>
+
+    <h2>Utility and Use Cases:</h2>
+    <p>BELLY tokens are used for:</p>
+    <ul>
+        <li>Peer-to-peer transactions within the BELLY community or platforms accepting BELLY as payment.</li>
+        <li>Community rewards and incentives to encourage engagement.</li>
+        <li>Participation in governance decisions to shape the BELLY ecosystem's future.</li>
+    </ul>
+
+    <h2>Community Engagement:</h2>
+    <ul>
+        <li>Regular airdrops to active members.</li>
+        <li>Exciting social media contests to reward creativity and participation.</li>
+        <li>Get free $BELLY tokens from our online faucet: <a href="https://belly-faucet.onrender.com/" target="_blank">belly-faucet.onrender.com</a></li>
+    </ul>
+
+    <h2>Token Burning:</h2>
+    <p>Periodic token burning to reduce supply and potentially increase token value.</p>
+
+    <h2>Disclaimer:</h2>
+    <p>Belly Token (BELLY) is a fan-made project inspired by One Piece, not officially associated with the franchise. Always exercise due diligence and be aware of risks when participating in the BELLY ecosystem.</p>
+
+
+        <h2>Conclusion</h2>
+        <p>BELLY Token unites fans of Bitcoin Cash and CashTokens through a fun and interactive community. With simplicity and community engagement at its core, BELLY promises a memorable crypto adventure for all who join.</p>
+
+
+
+        
+
+        <!-- Draggable Pinned Section -->
+        <div class="draggable-section" id="draggableSection">
+          <!-- Social Media Icons -->                    
+          <div class="pinned-section">
+             <a href="https://twitter.com/RushDAppBCH" target="_blank" class="social-icon">
+                 <svg width="32" height="32" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+                 </svg>
+            </a>
+            <a href="https://t.me/RushDApp" target="_blank" class="social-icon">
+                <img src="https://telegram.org/img/t_logo.png" alt="Telegram" width="32" height="32">
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <!-- Marquee Announcement -->
+        <div class="announcement">
+            <div class="marquee">
+                <span>⭐️🌟 Special Announcement: Join our community and get a chance to win exciting prizes! 🎉🚀</span>
+            </div>
+        </div>
+
+    <script>
+        // JavaScript code to make the pinned section draggable
+        const draggableSection = document.getElementById('draggableSection');
+        let isDragging = false;
+        let offset = { x: 0, y: 0 };
+
+        draggableSection.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offset.x = e.clientX - draggableSection.offsetLeft;
+            offset.y = e.clientY - draggableSection.offsetTop;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const x = e.clientX - offset.x;
+                const y = e.clientY - offset.y;
+                draggableSection.style.left = x + 'px';
+                draggableSection.style.top = y + 'px';
+            }
+        });
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        function loadPage(page) {
+            if (page === 'index.html') {
+                window.location.href = 'index.html';
+            } else {
+                const container = document.getElementById('content');
+                const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        container.innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.open('GET', page, true);
+                xhr.send();
+            }
+        }
+        
+       
+
+        function loadFaucet() {
+            const container = document.getElementById('content');
+            container.innerHTML = '<iframe src="https://belly-faucet.onrender.com/" width="100%" height="800px" frameborder="0"></iframe>';
+        }
+        </script>
+</body>
+  </html>
