@@ -284,18 +284,23 @@
             isDragging = false;
         });
 
-        
         function loadPage(page) {
-            const container = document.getElementById('content');
-            const xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    container.innerHTML = xhr.responseText;
-                }
-            };
-            xhr.open('GET', page, true);
-            xhr.send();
+            if (page === 'index.html') {
+                window.location.href = 'index.html';
+            } else {
+                const container = document.getElementById('content');
+                const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        container.innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.open('GET', page, true);
+                xhr.send();
+            }
         }
+        
+       
 
         function loadFaucet() {
             const container = document.getElementById('content');
