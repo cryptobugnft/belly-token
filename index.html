@@ -144,11 +144,36 @@
         .draggable-section a {
             margin-right: 10px;
         }
+
+        /* Top menu styles */
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #007bff;
+        }
+
+        .menu-item {
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu-item:last-child {
+            margin-right: 0;
+        }
         
     </style>
 </head>
 <body>
     <p><img src="./resources/belly-banner.jpg" alt="Belly" width="360"></p>    
+    
+    <div class="top-menu">
+        <div class="menu-item"><a href="#">Home</a></div>
+        <div class="menu-item"><a href="https://belly-faucet.onrender.com/" target="_blank">Faucet</a></div>
+        <div class="menu-item">Exchange</div>
+    </div>
+    
     <div class="container">
         <h1>Belly Token (BELLY)</h1>
 
