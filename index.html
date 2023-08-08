@@ -181,10 +181,11 @@
     <div class="top-menu">
         <div class="menu-item"><a href="#">Home</a></div>
         <div class="menu-item"><a href="https://belly-faucet.onrender.com/" target="_blank">Faucet</a></div>
+        <div class="menu-item"><a href="#" onclick="loadFaucet()">Faucet</a></div>
         <div class="menu-item">Exchange</div>
     </div>
     
-    <div class="container">
+    <div class="container" id="content">
         <h1>Belly Token (BELLY)</h1>
 
         <h2>Abstract</h2>
@@ -283,7 +284,24 @@
         document.addEventListener('mouseup', () => {
             isDragging = false;
         });
-    </script>
+
         
+        function loadPage(page) {
+            const container = document.getElementById('content');
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    container.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open('GET', page, true);
+            xhr.send();
+        }
+
+        function loadFaucet() {
+            const container = document.getElementById('content');
+            container.innerHTML = '<iframe src="https://belly-faucet.onrender.com/" width="100%" height="800px" frameborder="0"></iframe>';
+        }
+        </script>
 </body>
 </html>
