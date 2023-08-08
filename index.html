@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belly Token (BELLY):</title>
-    <link rel="stylesheet" href="https://unpkg.com/gitbook-style/dist/gitbook.css">
+    <title>Belly Token (BELLY): Fandom Wiki</title>
     <style>
-        /* Load the OnePiece Regular font */
-        @font-face {
-            font-family: 'OnePieceRegular';
-            src: url('https://raw.githubusercontent.com/cryptobugnft/belly-token/main/resources/ONE_PIECE.ttf') format('opentype');
-        }
-
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: 'OnePieceRegular', sans-serif; /* Apply the custom font */
-            background-image: url('bg.png'); /* Set the background image */
-            background-repeat: repeat; /* Repeat the background image */
+            background-color: #f7f7f7;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f8f8;
+            background-color: #fff;
             border: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -32,23 +25,43 @@
         h1 {
             font-size: 36px;
             margin-bottom: 20px;
-            font-weight: 700;
+            font-weight: bold;
             color: #007bff;
         }
 
         h2 {
-            font-size: 28px;
+            font-size: 24px;
             margin-top: 32px;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
+            font-weight: bold;
             color: #007bff;
         }
 
         p {
-            line-height: 1.6;
+            margin: 0 0 16px 0;
         }
 
         ul, ol {
-            padding-left: 30px;
+            margin: 0 0 16px 30px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 16px;
+        }
+
+        .social-icon {
+            margin-left: 10px;
         }
 
         /* Add responsive styles for mobile */
@@ -56,29 +69,15 @@
             .container {
                 padding: 10px;
             }
-            h1, h2 {
-                font-size: 24px;
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
             }
             p {
                 font-size: 16px;
             }
-        }
-
-        /* Add styles for pinned section */
-        .pinned-section {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .pinned-section a {
-            margin-right: 10px;
         }
     </style>
 </head>
@@ -131,21 +130,18 @@
     <p>Belly Token (BELLY) is a fan-made project inspired by One Piece, not officially associated with the franchise. Always exercise due diligence and be aware of risks when participating in the BELLY ecosystem.</p>
 
 
-
         <h2>Conclusion</h2>
         <p>BELLY Token unites fans of Bitcoin Cash and CashTokens through a fun and interactive community. With simplicity and community engagement at its core, BELLY promises a memorable crypto adventure for all who join.</p>
-    </div>
 
-    <!-- Pinned section for social media links -->
-    <div class="pinned-section">
-        <a href="https://twitter.com/RushDAppBCH" target="_blank">
-            <svg width="32" height="32" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
-            </svg>
-        </a>
-        <a href="https://t.me/RushDApp" target="_blank">
-            <img src="https://telegram.org/img/t_logo.png" alt="Telegram" width="32" height="32">
-        </a>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://twitter.com/RushDAppBCH" target="_blank" class="social-icon">
+                <img src="https://raw.githubusercontent.com/cryptobugnft/belly-token/main/assets/twitter.png" alt="Twitter" width="32" height="32">
+            </a>
+            <a href="https://t.me/RushDApp" target="_blank" class="social-icon">
+                <img src="https://raw.githubusercontent.com/cryptobugnft/belly-token/main/assets/telegram.png" alt="Telegram" width="32" height="32">
+            </a>
+        </div>
     </div>
 </body>
 </html>
