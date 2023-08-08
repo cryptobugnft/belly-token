@@ -130,6 +130,18 @@ a:hover {
     background-color: #008000; /* Set menu background color to dark green */
 }
 
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #008000; /* Set menu background color to dark green */
+    display: flex;
+    gap: 20px; /* Add some spacing between menu items */
+    padding: 10px;
+    z-index: 999; /* Ensure the menu stays on top of other content */
+}
+
 .menu-item {
     margin-right: 20px;
     font-size: 18px;
