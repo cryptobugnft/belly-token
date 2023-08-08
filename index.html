@@ -122,6 +122,25 @@
             0% { transform: translateX(0%); }
             100% { transform: translateX(-100%); }
         }
+
+        /* Add styles for draggable pinned section */
+        .draggable-section {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: move; /* Set the cursor to indicate draggable */
+        }
+
+        .draggable-section a {
+            margin-right: 10px;
+        }
         
     </style>
 </head>
@@ -185,18 +204,47 @@
                 <span>⭐️🌟 Special Announcement: Join our community and get a chance to win exciting prizes! 🎉🚀</span>
             </div>
         </div>
-        
-        <!-- Social Media Icons -->
-        <div class="pinned-section">
-            <a href="https://twitter.com/RushDAppBCH" target="_blank" class="social-icon">
-                <svg width="32" height="32" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Draggable Pinned Section -->
+        <div class="draggable-section" id="draggableSection">
+          <!-- Social Media Icons -->                    
+          <div class="pinned-section">
+             <a href="https://twitter.com/RushDAppBCH" target="_blank" class="social-icon">
+                 <svg width="32" height="32" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
                      <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
-                </svg>
+                 </svg>
             </a>
             <a href="https://t.me/RushDApp" target="_blank" class="social-icon">
                 <img src="https://telegram.org/img/t_logo.png" alt="Telegram" width="32" height="32">
             </a>
+          </div>
         </div>
     </div>
+
+    <script>
+        // JavaScript code to make the pinned section draggable
+        const draggableSection = document.getElementById('draggableSection');
+        let isDragging = false;
+        let offset = { x: 0, y: 0 };
+
+        draggableSection.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offset.x = e.clientX - draggableSection.offsetLeft;
+            offset.y = e.clientY - draggableSection.offsetTop;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const x = e.clientX - offset.x;
+                const y = e.clientY - offset.y;
+                draggableSection.style.left = x + 'px';
+                draggableSection.style.top = y + 'px';
+            }
+        });
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    </script>
+        
 </body>
 </html>
