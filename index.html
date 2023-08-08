@@ -4,181 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belly Token (BELLY): Fandom Wiki</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            /*background-color: #f7f7f7;*/
-            background-color: #000;
-            color: #fff; /* Set font color to white */
-        }
-        
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #000; /* Set background color to black */
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-weight: bold;
-            /*color: #007bff; */
-            color: #008000; /* Set header color to dark green */
-        
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-top: 32px;
-            margin-bottom: 16px;
-            font-weight: bold;
-            /*color: #007bff; */
-            color: #008000; /* Set header color to dark green */
-        }
-
-        p {
-            margin: 0 0 16px 0;
-        }
-
-        ul, ol {
-            margin: 0 0 16px 30px;
-        }
-        
-        ul {
-            text-align: left;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 16px;
-        }
-
-        .social-icon {
-            margin-left: 10px;
-        }
-
-        /* Add responsive styles for mobile */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 28px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 16px;
-            }
-        }
-
-        /* Add styles for pinned section */
-        .pinned-section {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .pinned-section a {
-            margin-right: 10px;
-        }
-
-        /* Marquee style */
-        .announcement {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .marquee {
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .marquee span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 15s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-100%); }
-        }
-
-        /* Add styles for draggable pinned section */
-        .draggable-section {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: move; /* Set the cursor to indicate draggable */
-        }
-
-        .draggable-section a {
-            margin-right: 10px;
-        }
-
-        /* Top menu styles */
-        .top-menu {
-            display: flex;
-            //justify-content: space-between;
-            justify-content: flex-start; /* Align the menus to the left */
-            gap: 20px; /* Add some spacing between menu items */
-            padding: 10px;
-            /*background-color: #007bff;*/
-            background-color: #008000; /* Set menu background color to dark green */        
-        }
-
-        .menu-item {
-            margin-right: 20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .menu-item a {
-            color: #fff; /* Set font color to white */
-            text-decoration: none;
-        }
-
-        .menu-item:last-child {
-            margin-right: 0;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">    
 </head>
 <body>
     <div class="top-menu">
@@ -235,14 +61,9 @@
     <h2>Disclaimer:</h2>
     <p>Belly Token (BELLY) is a fan-made project inspired by One Piece, not officially associated with the franchise. Always exercise due diligence and be aware of risks when participating in the BELLY ecosystem.</p>
 
-
         <h2>Conclusion</h2>
         <p>BELLY Token unites fans of Bitcoin Cash and CashTokens through a fun and interactive community. With simplicity and community engagement at its core, BELLY promises a memorable crypto adventure for all who join.</p>
-
-
-
         
-
         <!-- Draggable Pinned Section -->
         <div class="draggable-section" id="draggableSection">
           <!-- Social Media Icons -->                    
@@ -305,9 +126,7 @@
                 xhr.send();
             }
         }
-        
-       
-
+             
         function loadFaucet() {
             const container = document.getElementById('content');
             container.innerHTML = '<iframe src="https://belly-faucet.onrender.com/" width="100%" height="800px" frameborder="0"></iframe>';
