@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff; /* Set font color to white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #000; /* Set background color to black */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #008000; /* Set header color to dark green */
+}
+
+ul {
+    text-align: left;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+
+.social-icon {
+    margin-left: 10px;
+}
+
+/* Add responsive styles for mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Add styles for pinned section */
+.pinned-section {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.pinned-section a {
+    margin-right: 10px;
+}
+
+/* Marquee style */
+.announcement {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Add styles for draggable pinned section */
+.draggable-section {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: move; /* Set the cursor to indicate draggable */
+}
+
+.draggable-section a {
+    margin-right: 10px;
+}
+
+/* Top menu styles */
+.top-menu {
+    display: flex;
+    justify-content: flex-start; /* Align the menus to the left */
+    gap: 20px; /* Add some spacing between menu items */
+    padding: 10px;
+    background-color: #008000; /* Set menu background color to dark green */
+}
+
+.menu-item {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item a {
+    color: #fff; /* Set font color to white */
+    text-decoration: none;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+  
