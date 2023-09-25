@@ -21,6 +21,7 @@ function drawChart() {
         width: 400,
         height: 300,
         is3D: true, // This option creates a 3D pie chart
+        backgroundColor: 'transparent'
     };
 
     // Create a new chart and attach it to the specified HTML element
