@@ -17,7 +17,7 @@ function drawChart() {
 
     // Define chart options
     var options = {
-        title: 'Belly Token Distribution',
+        title: 'Belly Token Initial Allocation',
         width: 400,
         height: 300,
         is3D: true, // This option creates a 3D pie chart
