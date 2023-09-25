@@ -9,9 +9,9 @@ function drawChart() {
     // Replace this data with your actual token distribution data
     var data = google.visualization.arrayToDataTable([
         ['Category', 'Percentage'],
-        ['Project Development', 40],
+        ['Project Development', 20],
         ['Team Members and Advisors', 10],
-        ['Liquidity Pool', 30],
+        ['Liquidity Pool', 50],
         ['Community Airdrops', 20]
     ]);
 
