@@ -17,8 +17,8 @@
     <div class="fixed-menu">
         <div class="menu-item"><a href="#" onclick="loadPage('index.html')">Home</a></div>
         <!-- <div class="menu-item"><a href="#" onclick="loadFaucet()">Faucet</a></div> -->
-        <div class="menu-item"><a href="#" onclick="loadCauldron()">Cauldron</a></div>
-        <div class="menu-item">Exchange</div>
+        <div class="menu-item"><a href="#" onclick="loadStakeCauldron()">Stake Belly</a></div>
+        <div class="menu-item"><a href="#" onclick="loadCauldron()">Buy Belly</a></div>
         <div class="menu-item"><a href="#" onclick="loadNFTMint()">Mushi Mint</a></div>
         
     </div>
@@ -152,6 +152,11 @@
             const container = document.getElementById('content');
             container.innerHTML = '<iframe src="https://app.cauldron.quest/#/swap/b62431202f3da15b3f1cb1f8f187731d7e0d25933ddfce781368960a983e985e" width="100%" height="800px" frameborder="0"></iframe>';
         }
+        function loadStakeCauldron() {
+            const container = document.getElementById('content');
+            container.innerHTML = '<iframe src="https://app.cauldron.quest/#/swap/https://app.cauldron.quest/add/b62431202f3da15b3f1cb1f8f187731d7e0d25933ddfce781368960a983e985e" width="100%" height="800px" frameborder="0"></iframe>';
+        }
+
 
         function loadNFTMint() {
             const container = document.getElementById('content');
